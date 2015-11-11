@@ -1,0 +1,37 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+  padding-left: 50px;
+  font-size: 18px;
+  background: black;
+}
+
+h1{
+  color: blue;
+}
+
+table{
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+table td{
+  padding: 0px 20px 0px 10px;
+  border: 1px solid black;
+  background: lightblue;
+}
+
+th {
+  border: 2px solid black;
+  background: blue;
+  color: white;
+  padding: 0px 20px 0px 10px;
+
+} 
+
+.container {
+  margin: 50px auto;
+}
