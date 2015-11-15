@@ -1,0 +1,9 @@
+
+<p><%= @contact.full_name %></p>
+<p>Phone Number: <%= @contact.Japanese_number %></p>
+<p>Email address: <%= @contact.email %></p>
+
+<p>Last Updated: <%= @contact.friendly_update %></p>
+
+<%= link_to "Edit", edit_path %>
+<%= link_to "Delete", "/contacts/#{@contact.id}", method: :delete %><br>
