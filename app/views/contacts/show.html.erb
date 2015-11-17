@@ -2,8 +2,10 @@
 <p><%= @contact.full_name %></p>
 <p>Phone Number: <%= @contact.Japanese_number %></p>
 <p>Email address: <%= @contact.email %></p>
+<p>Bio: <%= @contact.bio %></p>
 
 <p>Last Updated: <%= @contact.friendly_update %></p>
 
-<%= link_to "Edit", edit_path %>
-<%= link_to "Delete", "/contacts/#{@contact.id}", method: :delete %><br>
+<%= link_to "Edit", edit_path %> || 
+<%= link_to "Delete", "/contacts/#{@contact.id}", method: :delete %> || 
+<%= link_to "Go back", "/contacts" %>

@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
 
   def create
     # id = params[:id]
-    contact = ContactInfo.create(first_name: params[:first_name], last_name: params[:last_name], email: params[:email], phone_number: params[:phone_number])
+    contact = ContactInfo.create(first_name: params[:first_name], middle_name: params[:middle_name], last_name: params[:last_name], email: params[:email], phone_number: params[:phone_number], bio: params[:bio])
     redirect_to "/contacts/#{contact.id}"
   end
 
@@ -27,10 +27,12 @@ class ContactsController < ApplicationController
     id = params[:id]
     contact = ContactInfo.find_by(id: id)
     first = params[:first_name]
+    middle = params[:middle_name]
     last = params[:last_name]
     email = params[:email]
     phone = params[:phone_number]
-    contact.update(first_name: first, last_name: last, email: email, phone_number: phone)
+    bio = params[:bio]
+    contact.update(first_name: first, middle_name: middle, last_name: last, email: email, phone_number: phone, bio: params[:bio])
     redirect_to "/contacts/#{contact.id}"
   end
 

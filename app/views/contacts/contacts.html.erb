@@ -18,7 +18,7 @@ Table of Contacts</a>
         <td><%= contact.full_name %></td>
         <td><%= contact.email %></td>
         <td><%= contact.Japanese_number %></td>
-        <td><a href="contacts/<%= contact.id %>">Click here</a></td>
+        <td><a href="/contacts/<%= contact.id %>">Click here</a></td>
       </tr>
     <% end %>
     </table>
@@ -52,3 +52,5 @@ Table of Contacts</a>
   </div>
 </div>
 </div>
+
+<%= link_to "Add", "/contacts/new" %>
