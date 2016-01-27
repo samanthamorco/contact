@@ -1,7 +1,15 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+ContactInfo.create!([
+  {first_name: "Sami", last_name: "Morco", email: "sami.morco@gmail.com", phone_number: 222, middle_name: "D", bio: "I like chocolate.", latitude: 37.9890463, longitude: -122.3107957},
+  {first_name: "Felicia", last_name: "Day", email: "fday@gmail.com", phone_number: 222, middle_name: nil, bio: nil, latitude: nil, longitude: nil},
+  {first_name: "John", last_name: "Smith", email: "jsmith@gmail.com", phone_number: 222, middle_name: nil, bio: nil, latitude: nil, longitude: nil},
+  {first_name: "Nathan", last_name: "Fillion", email: "captainhammer@firefly.com", phone_number: 222, middle_name: nil, bio: nil, latitude: nil, longitude: nil},
+  {first_name: "Kim", last_name: "Kardashian", email: "kim@kardashian.com", phone_number: 222, middle_name: nil, bio: nil, latitude: nil, longitude: nil},
+  {first_name: "Alison", last_name: "Brie", email: "abrie@community.com", phone_number: 222, middle_name: nil, bio: nil, latitude: nil, longitude: nil},
+  {first_name: "Leslie", last_name: "Knope", email: "knope@pawnee.com", phone_number: 222, middle_name: "Barbara", bio: "Leslie is a mid-level bureaucrat in the Parks and Recreation Department of Pawnee, Indiana who hopes to advance her career and improve her town, while working towards her goal of becoming the first female President. She and Mark Brendanawicz, a coworker of hers and reputable womanizer, hooked up leaving Leslie with romantic feelings towards him, although it meant nothing to Mark. Knope is a fan of Hillary Clinton (whom Amy Poehler spoofed during her tenure on Saturday Night Live), prominently displaying her official portrait as Secretary of State on the wall next to her door. In addition, she displays the photograph of Madeline Albright, Condoleezza Rice, Janet Reno, and Nancy Pelosi. Leslie is a proud member of numerous action committees in and around City Hall, including, but not limited to: the Equal Opportunity Committee, the Fun in the Sun Committee, the Clean Restroom Task Force, the Increased Access to Restrooms Task Force, the Handicapped Restroom Task Force, the Committee for Repainting Handicapped Parking Spaces Task Force, and the Task Force to Reduce the Number of Public Restrooms. Leslie had triplets. Pawnee is #1!", latitude: nil, longitude: nil},
+  {first_name: "Bob", last_name: "Marley", email: "bmar@gmail.com", phone_number: 222, middle_name: nil, bio: nil, latitude: nil, longitude: nil},
+  {first_name: "Mark", last_name: "Bob", email: "dhskjfh@gmail.com", phone_number: 222, middle_name: nil, bio: nil, latitude: nil, longitude: nil},
+  {first_name: "Evil", last_name: "Deville", email: "evil@hell.com", phone_number: 6666666, middle_name: nil, bio: nil, latitude: nil, longitude: nil},
+  {first_name: "Rawr", last_name: "Rawrrr", email: "rawr@monster.com", phone_number: 1234567, middle_name: nil, bio: nil, latitude: nil, longitude: nil},
+  {first_name: "Jamie", last_name: "Spears", email: "jamie@spears.com", phone_number: 1234567, middle_name: "Lynn", bio: nil, latitude: nil, longitude: nil},
+  {first_name: "Walt", last_name: "World", email: "walt@disney.com", phone_number: 2222222, middle_name: "Disney", bio: "this is a test!", latitude: 33.8153022, longitude: -117.9261865}
+])

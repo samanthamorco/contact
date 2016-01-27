@@ -25,6 +25,14 @@ Update:
   <%= label_tag :bio, "Bio:" %>
   <%= text_area_tag :bio, @contact.bio %>
 </div>
+<div>
+  <%= label_tag :address, "Address:" %>
+  <%= text_field_tag :address, @contact.address %>
+</div>
+<!-- <div>
+  <%= label_tag :latitude, "Longitude:" %>
+  <%= text_field_tag :longitude, @contact.longitude %>
+</div> -->
 
 <div>
   <%= submit_tag "Submit Contact" %>

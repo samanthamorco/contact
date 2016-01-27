@@ -11,17 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151117043723) do
+ActiveRecord::Schema.define(version: 20151129221934) do
+
+  create_table "contact_groups", force: :cascade do |t|
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.integer  "group_id",        limit: 4
+    t.integer  "contact_info_id", limit: 4
+  end
 
   create_table "contact_infos", force: :cascade do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
-    t.integer  "phone_number"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-    t.string   "middle_name"
-    t.text     "bio"
+    t.string   "first_name",   limit: 255
+    t.string   "last_name",    limit: 255
+    t.string   "email",        limit: 255
+    t.integer  "phone_number", limit: 4
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.string   "middle_name",  limit: 255
+    t.text     "bio",          limit: 65535
+    t.float    "latitude",     limit: 24
+    t.float    "longitude",    limit: 24
+  end
+
+  create_table "groups", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
